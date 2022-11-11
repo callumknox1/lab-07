@@ -75,7 +75,9 @@ score_bty_fit <- linear_reg() %>%
 tidy(score_bty_fit)
 ```
 
-*score^ = 3.88033795 + 0.06663704bty_avg*
+
+score^ = 3.88033795 + 0.06663704bty_avg
+
 
 ### Exercise 4
 
