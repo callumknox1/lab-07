@@ -376,12 +376,21 @@ or teaching.</p>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># this uses the patchwork package loaded above</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># learn more about patchwork at https://patchwork.data-imaginist.com/</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># it might be useful for your presentations!</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>plot_geom_point  <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(___)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plot_geom_jitter <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(___)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plot_geom_point <span class="sc">+</span> plot_geom_jitter</span></code></pre></div>
-<p><em>Add your narrative here.</em></p>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>plot_geom_point  <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> evals,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                           <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> score, </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">y =</span> bty_avg</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>            )) <span class="sc">+</span> </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>              <span class="fu">geom_point</span>()</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>plot_geom_jitter <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> evals,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                           <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> score, </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">y =</span> bty_avg</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>            )) <span class="sc">+</span> <span class="fu">geom_jitter</span>()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>                                  </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>plot_geom_point <span class="sc">+</span> plot_geom_jitter</span></code></pre></div>
+<p>Jitter to add a small amount of random variation to the location of
+each point.</p>
 </div>
 <div id="exercise-3" class="section level3">
 <h3>Exercise 3</h3>

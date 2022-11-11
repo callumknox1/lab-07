@@ -44,14 +44,22 @@ The distribution is left skewed. The students rate the course well/highly. We th
 # this uses the patchwork package loaded above
 # learn more about patchwork at https://patchwork.data-imaginist.com/
 # it might be useful for your presentations!
-plot_geom_point  <- ggplot(___)
+plot_geom_point  <- ggplot(data = evals,
+                           mapping = aes(x = score, 
+                                         y = bty_avg
+            )) + 
+              geom_point()
 
-plot_geom_jitter <- ggplot(___)
+plot_geom_jitter <- ggplot(data = evals,
+                           mapping = aes(x = score, 
+                                         y = bty_avg
+            )) + geom_jitter()
+                                  
 
 plot_geom_point + plot_geom_jitter
 ```
 
-*Add your narrative here.*
+Jitter to  add a small amount of random variation to the location of each point.
 
 ### Exercise 3
 
