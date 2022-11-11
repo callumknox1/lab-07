@@ -87,14 +87,14 @@ plot_geom_point  <- ggplot(data = evals,
                                          y = bty_avg
             )) + 
               geom_point() +
-  geom_smooth(method = "lm", se = FALSE,
+  geom_smooth(method = "loess", se = FALSE,
               color = "orange" )
 
 plot_geom_jitter <- ggplot(data = evals,
                            mapping = aes(x = score, 
                                          y = bty_avg
             )) + geom_jitter() +
-  geom_smooth(method = "lm", se = FALSE,
+  geom_smooth(method = "loess", se = FALSE,
               color = "orange" )
                                   
 
@@ -103,7 +103,7 @@ plot_geom_point + plot_geom_jitter
 
 ### Exercise 5
 
-*Add interpretation of intercept here.*
+
 
 ### Exercise 6
 
