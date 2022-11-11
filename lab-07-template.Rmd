@@ -33,7 +33,7 @@ ggplot(data = evals,
   geom_bar()
 ```
 
-*Add your narrative here.*
+The distribution is left skewed. The students rate the course well/highly. We thought they would since they are tracked to be tenure or teaching. 
 
 ### Exercise 2
 
