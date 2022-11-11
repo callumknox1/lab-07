@@ -1,6 +1,6 @@
 ---
 title: "Lab 07 - Modelling course evaluations"
-author: Callum, Sarah, Eddie
+author: Callum, Sarah, Eddie Jiang
 output: 
   tufte::tufte_html:
     css: ../lab.css
